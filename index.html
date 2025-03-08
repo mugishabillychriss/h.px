@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hosting Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Game Hosting Platform!</h1>
+        <nav>
+            <ul>
+                <li><a href="#game1">Play Game 1</a></li>
+                <li><a href="#game2">Play Game 2</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="game1">
+            <h2>Game 1</h2>
+            <p>Click below to play Game 1:</p>
+            <button onclick="location.href='/game1'">Play Game 1</button>
+        </section>
+
+        <section id="game2">
+            <h2>Game 2</h2>
+            <p>Click below to play Game 2:</p>
+            <button onclick="location.href='/game2'">Play Game 2</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This platform hosts exciting games. Play and have fun!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Hosting Platform</p>
+    </footer>
+</body>
+</html>
